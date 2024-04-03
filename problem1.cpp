@@ -1,16 +1,16 @@
-
-
 #include <iostream>
 using namespace std;
-double fun(int a){
+double function(int a) {
     if(a==1){
         return 4;
     }
-    return 0.5*fun(a-1)-1;
+    return 0.5*function(a-1)-1;
 }
 
 
 int main() {
-    cout<<fun(10)<<endl;
+    int n;
+    cin>>n;
+    cout<<function(n)<<endl;
     return 0;
 }
