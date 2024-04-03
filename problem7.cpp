@@ -4,7 +4,7 @@ using namespace std;
 string SubString(const string& str, int i, int j) {
   
   if (i < 0 || j < 0 || i >= str.length() || j <= i) {
-    return ; 
+    return " " ; 
   }
   if (i == j) {
     return string(1, str[i]); 
