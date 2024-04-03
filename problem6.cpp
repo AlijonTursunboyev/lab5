@@ -8,10 +8,7 @@ string isPalidrome(string n){
     for(int i=len-1;i>=0;i--){
         b=b+n[i];
     }
-}
-
-
-
+};
 int main(){
     string n;
     cin>>n;
