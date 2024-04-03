@@ -1,5 +1,5 @@
 
-
+#include<cmath>
 #include <iostream>
 using namespace std;
 
@@ -7,7 +7,7 @@ int calculateF(int n) {
     if (n == 1) {
         return 3;
     } else {
-        return calculateF(n - 1) * calculateF(n - 1) + 3;
+        return  pow (calculateF(n - 1),2)  + 3;
     }
 }
 
