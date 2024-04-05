@@ -5,7 +5,7 @@ using namespace std;
 
 bool isPalindromeRecursive(const string& str, int i, int j) {
   
-  if (start >= j) {
+  if (i >= j) {
     return true;  
   }
 
