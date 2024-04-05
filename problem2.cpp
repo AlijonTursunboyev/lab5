@@ -13,11 +13,11 @@ int calculateF(int n) {
 
 int main() {
     int n;
-    cout << "Enter the value of n: ";
+    cout << n;
     cin >> n;
 
     int result = calculateF(n);
-    cout << "The value of f(" << n << ") is: " << result << endl;
+    cout << result << endl;
 
     return 0;
 }
