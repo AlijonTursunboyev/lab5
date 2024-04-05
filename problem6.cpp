@@ -28,9 +28,9 @@ int main() {
   getline(cin, str);  
 
   if (isPalindrome(str)) {
-    cout << str << " is a palindrome." << endl;
+    cout << 1;
   } else {
-    cout << str << " is not a palindrome." << endl;
+    cout << 0;
   }
 
   return 0;
