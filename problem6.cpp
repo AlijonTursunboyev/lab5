@@ -1,23 +1,37 @@
 #include <iostream>
-using namespace std;
 #include <string>
+using namespace std;
 
-string isPalidrome(string n){
-    string b;
-    int len=n.length();
-    for(int i=len-1;i>=0;i--){
-        b=b+n[i];
-    }
-};
-int main(){
-    string n;
-    cin>>n;
-    if(isPalidrome(n)==n){
-        cout<<1;
-    }
-    else
-        cout<<0;
 
-    return 0;
+bool isPalindromeRecursive(const string& str, int i, int j) {
+  
+  if (start >= j) {
+    return true;  
+  }
+
+  if (str[i] != str[j]) {
+    return false;  }
+
+  
+  return isPalindromeRecursive(str, i + 1, j - 1);
 }
+
+bool isPalindrome(const string& str) {
+  int len = str.length();
+  return isPalindromeRecursive(str, 0, len - 1);
+}
+
+int main() {
+  string str;
+
+  cout << "Enter a string: ";
+  getline(cin, str);  
+
+  if (isPalindrome(str)) {
+    cout << str << " is a palindrome." << endl;
+  } else {
+    cout << str << " is not a palindrome." << endl;
+  }
+
+  return 0;
 }
