@@ -11,7 +11,7 @@ string isPalidrome(string n){
 };
 int main(){
     string n;
-    getline(cin,n);
+    cin>>n;
     if(isPalidrome(n)==n){
         cout<<1;
     }
