@@ -13,7 +13,7 @@ int calculateF(int n) {
 
 int main() {
     int n;
-    cout << n;
+    
     cin >> n;
 
     int result = calculateF(n);
