@@ -14,7 +14,7 @@ string SubString(const string& str, int i, int j) {
 
 int main() {
   string str;
-  cin>>str;
+  getline(cin,str);
   int i,j;
   cin >>i;
   cin>>j;
